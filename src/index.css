@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    color: #1e293b;
+    background-color: #f8fafc;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  code, pre, kbd {
+    font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  }
+}
+
+/* Custom sleek scrollbar for dense data panels */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Highlighting styles in PDF evidence viewer */
+.pdf-highlight {
+  background-color: rgba(254, 240, 138, 0.7);
+  border-bottom: 2px solid #eab308;
+  border-radius: 2px;
+  padding: 0 2px;
+}
+
+.pdf-highlight-selected {
+  background-color: rgba(187, 247, 208, 0.85);
+  border-bottom: 2px solid #22c55e;
+}
+
+@media print {
+  body {
+    background-color: #ffffff !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+}

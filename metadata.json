@@ -1,0 +1,6 @@
+{
+  "name": "ResearchMate AI v2.0",
+  "description": "Universal Research, Systematic Review, and AI-Assisted Academic Writing Platform for Windows and Mobile devices with PRISMA 2020 workflows, PDF evidence citation, duplicate resolution, and literature synthesis.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
